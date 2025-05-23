@@ -1,0 +1,8 @@
+databaseChangeLog:
+- changeSet:
+    id: 1747999455814-1
+    author: franco (generated)
+    changes:
+    - dropTable:
+        tableName: school_entity
+

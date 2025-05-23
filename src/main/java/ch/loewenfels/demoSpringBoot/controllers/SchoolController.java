@@ -39,25 +39,21 @@ public class SchoolController {
     }
 
     @GetMapping("/{schoolId}")
-    //@PageableAsQueryParam
     public SchoolDto getSchool(@PathVariable(value = "schoolId") Long schoolId) {
         return new SchoolDto();
     }
 
     @PatchMapping("/{schoolId}")
-    //@PageableAsQueryParam
     public SchoolDto updateSchool(@PathVariable(value = "schoolId") Long schoolId, @RequestBody SchoolDto schoolDto) {
         return new SchoolDto();
     }
 
     @DeleteMapping("/{schoolId}")
-    //@PageableAsQueryParam
     public void deleteSchool(@PathVariable(value = "schoolId") Long schoolId) {
         throw new NotImplementedException();
     }
 
     @GetMapping("/towns")
-    //@PageableAsQueryParam
     public List<String> getTowns() {
         return schoolService.getDistinctTowns();
     }
@@ -76,5 +72,4 @@ public class SchoolController {
                                          @RequestBody SchoolClassDto schoolClassDto) {
         return new SchoolClassDto();
     }
-
 }

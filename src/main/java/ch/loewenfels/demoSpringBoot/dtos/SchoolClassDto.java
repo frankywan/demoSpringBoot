@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class SchoolClassDto {
+public class SchoolClassDto{
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Long id;
     private String name;
